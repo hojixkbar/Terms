@@ -3,118 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nevali Terms of Use</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Terms of Use</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      line-height: 1.6;
+      margin: 0;
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
       background-color: #f9f9f9;
-      color: #222;
+      color: #333;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    h1, h2 {
-      text-align: center;
+    h1, h2, h3 {
+      margin-top: 2rem;
     }
-    .lang-switch {
-      text-align: right;
-      margin-bottom: 1rem;
+    p {
+      margin: 1rem 0;
+      line-height: 1.6;
     }
-    .lang-switch button {
-      margin-left: 0.5rem;
-      padding: 0.3rem 0.6rem;
-      border: none;
-      background-color: #e0e0e0;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .lang-switch button:hover {
-      background-color: #ccc;
-    }
-    .content {
-      display: none;
-    }
-    .content.active {
-      display: block;
+    #language-select {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1rem;
+      padding: 0.25rem;
     }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('ru')">Русский</button>
-    <button onclick="switchLang('uz')">O‘zbekcha</button>
-  </div>
+  <select id="language-select">
+    <option value="en">English</option>
+    <option value="ru">Русский</option>
+    <option value="uz">Oʻzbekcha</option>
+  </select>
 
-  <div id="en" class="content active">
+  <div id="content-en" class="content">
     <h1>Terms of Use</h1>
-    <p><strong>Effective Date:</strong> 6 July, 2025</p>
+    <p><strong>Effective Date: 6 July, 2025</strong></p>
     <p>These Terms of Use ("Terms") govern your use of the Nevoli mobile application ("App"). By using the App, you agree to these Terms.</p>
-    <h2>1. Account Registration</h2>
+    <h3>1. Account Registration</h3>
     <p>You must provide accurate information during account creation. You are responsible for maintaining the confidentiality of your account.</p>
-    <h2>2. Use of the App</h2>
+    <h3>2. Use of the App</h3>
     <p>You agree to use the App for lawful purposes and in accordance with these Terms. You must not misuse social features or attempt to exploit or manipulate XP systems.</p>
-    <h2>3. User Content</h2>
+    <h3>3. User Content</h3>
     <p>You retain ownership of content you post, but you grant us a license to use it for app functionality.</p>
-    <h2>4. Termination</h2>
+    <h3>4. Termination</h3>
     <p>We may suspend or terminate your account if you violate these Terms or engage in harmful behavior.</p>
-    <h2>5. Changes to the App</h2>
+    <h3>5. Changes to the App</h3>
     <p>We may modify or discontinue the App or any features at any time without notice.</p>
-    <h2>6. Limitation of Liability</h2>
+    <h3>6. Limitation of Liability</h3>
     <p>We provide the App "as is" and disclaim warranties to the extent permitted by law.</p>
-    <h2>7. Contact Us</h2>
+    <h3>7. Contact Us</h3>
     <p>For questions about these Terms, contact us at hojiakbarqozoqov@gmail.com</p>
   </div>
 
-  <div id="ru" class="content">
+  <div id="content-ru" class="content" style="display:none">
     <h1>Условия использования</h1>
-    <p><strong>Дата вступления в силу:</strong> 6 июля 2025 г.</p>
-    <p>Настоящие Условия использования регулируют использование вами мобильного приложения Nevoli («Приложение»). Используя Приложение, вы соглашаетесь с этими Условиями.</p>
-    <h2>1. Регистрация аккаунта</h2>
-    <p>Вы должны предоставить точную информацию при создании аккаунта. Вы несете ответственность за конфиденциальность своего аккаунта.</p>
-    <h2>2. Использование Приложения</h2>
-    <p>Вы обязуетесь использовать Приложение в законных целях и в соответствии с настоящими Условиями. Запрещено злоупотреблять социальными функциями или манипулировать системой опыта (XP).</p>
-    <h2>3. Контент пользователя</h2>
-    <p>Вы сохраняете права собственности на размещённый вами контент, но предоставляете нам лицензию на его использование для функциональности приложения.</p>
-    <h2>4. Прекращение</h2>
-    <p>Мы можем приостановить или прекратить ваш доступ, если вы нарушаете Условия или ведёте себя вредоносно.</p>
-    <h2>5. Изменения</h2>
-    <p>Мы можем изменить или прекратить работу Приложения и его функций в любое время без уведомления.</p>
-    <h2>6. Ограничение ответственности</h2>
-    <p>Приложение предоставляется «как есть», и мы не даем гарантий в пределах, разрешенных законом.</p>
-    <h2>7. Связь с нами</h2>
-    <p>По вопросам об этих Условиях обращайтесь по адресу hojiakbarqozoqov@gmail.com</p>
+    <p><strong>Дата вступления в силу: 6 июля 2025 года</strong></p>
+    <p>Эти Условия использования ("Условия") регулируют ваше использование мобильного приложения Nevoli ("Приложение"). Используя приложение, вы соглашаетесь с этими Условиями.</p>
+    <h3>1. Регистрация аккаунта</h3>
+    <p>Вы должны предоставить точную информацию при создании учетной записи. Вы несете ответственность за сохранение конфиденциальности своей учетной записи.</p>
+    <h3>2. Использование приложения</h3>
+    <p>Вы соглашаетесь использовать Приложение в законных целях и в соответствии с настоящими Условиями. Запрещено злоупотреблять социальными функциями или пытаться манипулировать системой XP.</p>
+    <h3>3. Контент пользователя</h3>
+    <p>Вы сохраняете право собственности на размещаемый контент, но предоставляете нам лицензию на его использование для функциональности приложения.</p>
+    <h3>4. Прекращение действия</h3>
+    <p>Мы можем приостановить или прекратить вашу учетную запись, если вы нарушаете эти Условия или совершаете вредоносные действия.</p>
+    <h3>5. Изменения в приложении</h3>
+    <p>Мы можем изменить или прекратить работу Приложения или любых его функций в любое время без уведомления.</p>
+    <h3>6. Ограничение ответственности</h3>
+    <p>Мы предоставляем Приложение "как есть" и отказываемся от гарантий в максимально допустимой степени.</p>
+    <h3>7. Связь с нами</h3>
+    <p>По вопросам этих Условий пишите на hojiakbarqozoqov@gmail.com</p>
   </div>
 
-  <div id="uz" class="content">
+  <div id="content-uz" class="content" style="display:none">
     <h1>Foydalanish shartlari</h1>
-    <p><strong>Amalga kirish sanasi:</strong> 2025-yil 6-iyul</p>
-    <p>Ushbu Foydalanish shartlari Nevoli mobil ilovasidan (“Ilova”) foydalanishingizni tartibga soladi. Ilovadan foydalangan holda, siz ushbu shartlarga rozilik bildirasiz.</p>
-    <h2>1. Hisobni ro'yxatdan o'tkazish</h2>
-    <p>Ro'yxatdan o'tishda aniq ma'lumotlarni taqdim etishingiz shart. Hisobingiz maxfiyligini saqlash sizning zimangizda.</p>
-    <h2>2. Ilovadan foydalanish</h2>
-    <p>Ilovadan faqat qonuniy maqsadlarda va ushbu Shartlarga muvofiq foydalanishga rozisiz. Ijtimoiy funksiyalardan noto‘g‘ri foydalanish yoki XP tizimidan foyda ko‘rishga urinish taqiqlanadi.</p>
-    <h2>3. Foydalanuvchi mazmuni</h2>
-    <p>Siz joylashtirgan kontentga egalikni saqlab qolasiz, ammo bizga uni ilova funksiyalarini ta’minlash uchun ishlatishga ruxsat berasiz.</p>
-    <h2>4. To‘xtatish</h2>
-    <p>Agar siz ushbu shartlarni buzsangiz yoki zararli xatti-harakat qilgan bo‘lsangiz, hisobingizni to‘xtatishimiz yoki bekor qilishimiz mumkin.</p>
-    <h2>5. Ilovadagi o‘zgarishlar</h2>
-    <p>Biz Ilovani yoki uning funksiyalarini istalgan vaqtda ogohlantirishsiz o‘zgartirishimiz yoki to‘xtatishimiz mumkin.</p>
-    <h2>6. Javobgarlikni cheklash</h2>
-    <p>Ilova “boricha” taqdim etiladi va biz qonun tomonidan ruxsat etilgan darajada hech qanday kafolat bermaymiz.</p>
-    <h2>7. Biz bilan bog‘lanish</h2>
-    <p>Shartlar bo‘yicha savollar bo‘lsa, quyidagi manzilga murojaat qiling: hojiakbarqozoqov@gmail.com</p>
+    <p><strong>Amalga kirish sanasi: 2025-yil 6-iyul</strong></p>
+    <p>Ushbu Foydalanish shartlari ("Shartlar") Nevoli mobil ilovasidan ("Ilova") foydalanishingizni tartibga soladi. Ilovadan foydalanish orqali siz ushbu Shartlarga rozilik bildirasiz.</p>
+    <h3>1. Hisob ro'yxatdan o'tkazish</h3>
+    <p>Hisob yaratishda aniq ma'lumotlarni taqdim etishingiz kerak. Hisobingiz maxfiyligini saqlash uchun siz javobgarsiz.</p>
+    <h3>2. Ilovadan foydalanish</h3>
+    <p>Ilovadan faqat qonuniy maqsadlarda va ushbu Shartlarga muvofiq foydalanishga rozilik bildirasiz. Ijtimoiy xususiyatlardan noto‘g‘ri foydalanish yoki XP tizimlarini suiiste’mol qilish man etiladi.</p>
+    <h3>3. Foydalanuvchi mazmuni</h3>
+    <p>Siz joylashtirgan kontentga egalikni saqlab qolasiz, biroq bizga uni ilova funksionalligi uchun ishlatish huquqini berasiz.</p>
+    <h3>4. Hisobni bekor qilish</h3>
+    <p>Agar siz ushbu Shartlarni buzsangiz yoki zararli harakatlar qilsangiz, hisobingizni to‘xtatib qo‘yishimiz yoki bekor qilishimiz mumkin.</p>
+    <h3>5. Ilova o‘zgarishlari</h3>
+    <p>Biz Ilovani yoki uning funksiyalarini istalgan vaqtda oldindan ogohlantirmasdan o‘zgartirishimiz yoki to‘xtatishimiz mumkin.</p>
+    <h3>6. Javobgarlik cheklovi</h3>
+    <p>Ilova "mavjud holatda" taqdim etiladi va qonun ruxsat bergan darajada kafolatlardan voz kechamiz.</p>
+    <h3>7. Bog'lanish</h3>
+    <p>Ushbu Shartlar bo‘yicha savollar uchun bizga hojiakbarqozoqov@gmail.com manziliga yozing</p>
   </div>
 
   <script>
-    function switchLang(lang) {
-      document.querySelectorAll('.content').forEach(div => div.classList.remove('active'));
-      document.getElementById(lang).classList.add('active');
-    }
+    const selector = document.getElementById('language-select');
+    const contents = {
+      en: document.getElementById('content-en'),
+      ru: document.getElementById('content-ru'),
+      uz: document.getElementById('content-uz')
+    };
+
+    selector.addEventListener('change', (e) => {
+      Object.values(contents).forEach(div => div.style.display = 'none');
+      contents[e.target.value].style.display = 'block';
+    });
   </script>
 </body>
 </html>
